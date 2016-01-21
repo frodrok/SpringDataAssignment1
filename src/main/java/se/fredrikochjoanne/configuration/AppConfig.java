@@ -17,7 +17,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 @Configuration
-@EnableJpaRepositories(basePackages = "se.fredrik.repository")
+@EnableJpaRepositories(basePackages = "se.fredrikochjoanne.repository")
 @EnableTransactionManagement
 public class AppConfig {
 
@@ -25,9 +25,9 @@ public class AppConfig {
     public DataSource dataSource() {
         HikariConfig hikariConfig = new HikariConfig();
         hikariConfig.setDriverClassName("com.mysql.jdbc.Driver");
-        hikariConfig.setJdbcUrl("jdbc:mysql://localhost:3306/jpa");
+        hikariConfig.setJdbcUrl("jdbc:mysql://localhost/jpa");
         hikariConfig.setUsername("root");
-        hikariConfig.setPassword("root");
+        hikariConfig.setPassword("hannele1");
 
         return new HikariDataSource(hikariConfig);
     }
@@ -51,7 +51,7 @@ public class AppConfig {
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setDataSource(dataSource());
         factory.setJpaVendorAdapter(jpaVendorAdapter());
-        factory.setPackagesToScan("se.fredrik.model");
+        factory.setPackagesToScan("se.fredrikochjoanne.model");
 
         return factory;
     }
