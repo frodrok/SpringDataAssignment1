@@ -27,7 +27,7 @@ public class AppConfig {
         hikariConfig.setDriverClassName("com.mysql.jdbc.Driver");
         hikariConfig.setJdbcUrl("jdbc:mysql://localhost/jpa");
         hikariConfig.setUsername("root");
-        hikariConfig.setPassword("hannele1");
+        hikariConfig.setPassword("root");
 
         return new HikariDataSource(hikariConfig);
     }

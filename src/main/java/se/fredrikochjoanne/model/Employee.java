@@ -4,9 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
-/**
- * Created by joanne on 21/01/16.
- */
 @Entity
 public class Employee extends AbstractEntity{
 

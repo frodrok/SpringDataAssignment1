@@ -5,9 +5,6 @@ import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.MappedSuperclass;
 
-/**
- * Created by joanne on 21/01/16.
- */
 @MappedSuperclass
 public abstract class AbstractEntity {
 

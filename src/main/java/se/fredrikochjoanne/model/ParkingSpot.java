@@ -3,9 +3,6 @@ package se.fredrikochjoanne.model;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 
-/**
- * Created by joanne on 21/01/16.
- */
 @Entity
 public class ParkingSpot extends AbstractEntity {
 

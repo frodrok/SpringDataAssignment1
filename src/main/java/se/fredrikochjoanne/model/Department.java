@@ -5,9 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import java.util.Collection;
 
-/**
- * Created by joanne on 21/01/16.
- */
 @Entity
 public class Department extends AbstractEntity {
 
